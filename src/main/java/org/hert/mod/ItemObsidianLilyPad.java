@@ -6,7 +6,7 @@ import net.minecraft.item.ItemLilyPad;
 public class ItemObsidianLilyPad extends ItemLilyPad {
     public ItemObsidianLilyPad(Block block) {
         super(block);
-        this.setUnlocalizedName("hertmod.obsidian_waterlily");
         this.setRegistryName("hertmod", "obsidian_lilypad");
+        this.setUnlocalizedName(getRegistryName().toString());
     }
 }
