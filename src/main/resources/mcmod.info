@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "hertmod",
+  "name": "Hert Mod",
+  "description": "Hert hert hert.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["apa"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
