@@ -1,10 +1,8 @@
 package org.hert.mod;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
@@ -16,18 +14,11 @@ public class Main {
 //    @Instance
 //    public static Main instance = new Main();
 
-    static Item itemObsidianLilyPad;
-    static Block blockObsidianLilyPad;
+    public static Logger logger;
 
-    @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        blockObsidianLilyPad = new BlockObsidianLilyPad();
-        event.getRegistry().register(blockObsidianLilyPad);
-    }
-
-    @SubscribeEvent
-    public static void registerItems(RegistryEvent.Register<Item> event) {
-        itemObsidianLilyPad = new ItemObsidianLilyPad(blockObsidianLilyPad);
-        event.getRegistry().register(itemObsidianLilyPad);
+    @Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+        logger = event.getModLog();
+        logger.warn(" >>> running {}, preInit", VERSION);
     }
 }
