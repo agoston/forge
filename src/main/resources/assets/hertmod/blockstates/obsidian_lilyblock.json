@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"normal": [
+			{ "model": "hertmod:obsidian_lilyblock" },
+			{ "model": "hertmod:obsidian_lilyblock", "y": 90 },
+			{ "model": "hertmod:obsidian_lilyblock", "y": 180 },
+			{ "model": "hertmod:obsidian_lilyblock", "y": 270 }
+		]
+	}
+}
